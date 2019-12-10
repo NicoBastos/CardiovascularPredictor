@@ -34,7 +34,7 @@ model.add(Dense(8))
 model.add(Dense(1, activation='sigmoid'))
 
 # model.fit(X_train,y_train, batch_size=10, epochs= 100)
-model.compile(loss="binary_crossentropy", optimizer="Adadelta", metrics=["accuracy"])
+model.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
 
 
 history = model.fit(X_train,y_train, batch_size=20, epochs= 100)
